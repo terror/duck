@@ -33,8 +33,8 @@ def build(n):
     for i in range(n): ret.add(Node(string.ascii_uppercase[i]))
     return ret
 
-def main():
-    n, m, o = map(int, input().split()); l, r = build(n), []; s = l.get(m); i = s; a = i.key; s.set_key(None); i = i.next;
+def main(n, m, o):
+    l, r = build(n), []; s = l.get(m); i = s; a = i.key; s.set_key(None); i = i.next;
     while l.size != 1:
         c = 1
         while c < o:
